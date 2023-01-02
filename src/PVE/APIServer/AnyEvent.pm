@@ -776,7 +776,7 @@ sub proxy_request {
 	my $w; $w = http_request(
 	    $method => $target,
 	    headers => $headers,
-	    timeout => 30,
+	    timeout => 300,
 	    recurse => 0,
 	    proxy => undef, # avoid use of $ENV{HTTP_PROXY}
 	    keepalive => $keep_alive,
